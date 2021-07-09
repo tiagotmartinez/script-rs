@@ -1,0 +1,24 @@
+// an example script
+
+x = [11, 22, 33, 44, 55];
+y = [0 - 1];
+
+// test while loop
+i = 0;
+while i < length(x) {
+    // test conditional
+    if x[i] % 2 == 0 {
+        print(x[i], " is odd", " (for reals!)");
+    } else if x[i] % 2 != 0 {
+        print(x[i], " is even");
+    }
+    y[0] = append(y, x[i]);
+    print("current length is ", y[0]);
+    i = i + 1;
+}
+
+print(y);
+
+y[0] = y;
+print(y);
+
